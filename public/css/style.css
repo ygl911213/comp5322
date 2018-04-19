@@ -1,0 +1,123 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../img/bck.jpg) no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+
+}
+
+a:hover {
+  border-bottom: 3px solid white;
+}
+
+.button {
+  background-color: #4fc08d !important;
+  color: #fff !important;
+}
+
+.avatar {
+  border-radius: 3px;
+  width: 48px;
+  height: 48px;
+  float: right;
+}
+
+/* ---------- nav ---------- */
+
+.nav {
+  margin-bottom: 20px;
+  color: #999;
+  text-align: center;
+}
+
+.nav h1 {
+  color: #4fc08d;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+/* ---------- nav-setting ---------- */
+
+.nav-setting {
+  position: fixed;
+  right: 30px;
+  top: 35px;
+  z-index: 999;
+}
+
+.nav-setting .ui.dropdown.button {
+  padding: 10px 10px 0 10px;
+  background-color:dodgerblue;
+}
+
+.nav-setting .icon.bars {
+
+  font-size: 18px;
+}
+
+.nav-tran
+{
+  width:90px;
+  height:30px;
+  background:rebeccapurple;
+  transition:width 2s;
+  -moz-transition:width 2s; /* Firefox 4 */
+  -webkit-transition:width 2s; /* Safari and Chrome */
+  -o-transition:width 2s; /* Opera */
+  border-radius:0px 5px 5px 0px;
+  text-align:center;
+  padding-top:5px;
+
+}
+
+.nav-tran:hover
+{
+  width:150px;
+}
+
+.nav-tran-text{
+  color:white;
+}
+
+/* ---------- post-content ---------- */
+
+.post-content h3 a {
+  color:deeppink;
+}
+
+.post-content .tag {
+  font-size: 13px;
+  margin-right: 5px;
+  color: white;
+}
+
+.post-content .tag.right {
+  float: right;
+  margin-right: 0;
+}
+
+.post-content .tag.right a {
+  color: white;
+}
+
+.ui .segment{
+  position: relative;
+  background:#088cb7;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+
+}
+.ui .segment:before{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 38px;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #088cb7;
+  border-bottom: 13px solid transparent;
+}
