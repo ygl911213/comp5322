@@ -10,7 +10,7 @@ const winston = require('winston')
 const expressWinston = require('express-winston')
 
 const app = express()
-var port = process.env.PORT || 8000
+const port = process.env.PORT || config.port;
 
 app.set('views', path.join(__dirname, 'views'))
 
@@ -53,6 +53,6 @@ app.use(function (req, res, next) {
 routes(app)
 
 //
-server.listen(port, function() {
-    console.log("App is running on port " + port);
+app.listen(port, function () {
+  console.log(`${pkg.name} listening on port ${port}`);
 });
