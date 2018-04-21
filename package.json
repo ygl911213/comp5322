@@ -4,7 +4,7 @@
   "description": "my blog",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm install pm2 -g",
+    "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate",
     "test":"echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'myblog'"
   },
